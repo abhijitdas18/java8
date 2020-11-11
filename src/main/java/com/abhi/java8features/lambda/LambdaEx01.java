@@ -9,11 +9,9 @@ public class LambdaEx01 {
 	public static void main(String[] args) {
 
 		Arrays.asList("a","b","c").forEach(str -> System.out.print(str));
-		
+		System.out.println();
 		String coma = ",";
-		Arrays.asList("a","b","c").forEach(
-				str -> System.out.print(str + coma)
-				);	
+		Arrays.asList("a","b","c").forEach(str -> System.out.print(str + coma));
 		
 	}
 

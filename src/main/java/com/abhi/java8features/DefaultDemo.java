@@ -29,7 +29,7 @@ interface DefualtInterface{
 	void func1();
 	default void func2()
 	{
-		System.out.println("default.....");
+		System.out.println("default func2....");
 	}
 	
 	default void func3()

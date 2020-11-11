@@ -4,7 +4,7 @@ public class LambdaDemo
 {
 	public static void main(String []ar)
 	{
-		// SumInterfaceInterfaceof two number
+		// SumInterface sum two number
 		SumInterface sumIntr = new SumInterface() {
 			
 			@Override
@@ -17,8 +17,8 @@ public class LambdaDemo
 		
 		SumInterface obj = (a, b) -> a + b;		
 		System.out.println("Sum : " + obj.sum(3, 6));
-		
-		SumInterface01 obj2 = (a, b) -> System.out.print(a*b);
+
+		ProductInterface obj2 = (a, b) -> System.out.print(a*b);
 		obj2.mul(4, 5);
 		
 	}
@@ -30,7 +30,7 @@ interface SumInterface
 	int sum(int a, int b);
 }
 
-interface SumInterface01
+interface ProductInterface
 {
 	void mul(int a, int b);
 }

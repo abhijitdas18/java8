@@ -7,10 +7,11 @@ import java.util.stream.IntStream;
 public class IntStreamDemo {
     public static void main(String [] ar) {
 
-        //sum of int from 1 - 5 (1 + 2+ 3+ 4)
-        System.out.println("Sum: "+ IntStream.range(1,5).sum());
+        System.out.println("Display 1 to 5(exclusive) :");
+        IntStream.range(1,5).forEach(s-> System.out.print(s));
 
-        IntStream.range(1,5).forEach(s-> System.out.println(s));
+        //sum of int from 1 - 5 (1 + 2+ 3+ 4)
+        System.out.println("\nSum: "+ IntStream.range(1,5).sum());
 
         //OptionalInt
         System.out.println("Max:" + IntStream.range(1,5).max());

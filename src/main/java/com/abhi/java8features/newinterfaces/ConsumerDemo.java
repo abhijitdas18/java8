@@ -2,10 +2,10 @@ package com.abhi.java8features.newinterfaces;
 
 import java.util.function.Consumer;
 
-//java.util.function.Consumer is a functional interface.
+// java.util.function.Consumer is a functional interface.
 // a Consumer acts upon a value but returns nothing.
 //abstract functional method accept(T t), does not return any value making it a void method
-//default method andThen(Consumer<? super T> after)
+//  default method andThen(Consumer<? super T> after)
 public class ConsumerDemo {
 
 	public static void main(String[] args)
@@ -30,21 +30,16 @@ public class ConsumerDemo {
         // Use the consumer with three numbers.
         consumer03.accept(1);
         consumer03.accept(2);
-        consumer03.accept(3);
-        
         ///////////// EX 03 ///////////////////
         Consumer<String> consumer04 = s ->  printNames(s);     
         
         consumer04.accept("Jeremy");
         consumer04.accept("Paul");
-        consumer04.accept("Richard");
-        
+
         Consumer<String> consumer05 = ConsumerDemo ::  printNames;        
         consumer05.accept("Jeremy");
         consumer05.accept("Paul");
-        consumer05.accept("Richard");
-        
-		
+
 	}
 	
 	static void display(int value) {

@@ -1,7 +1,7 @@
 package com.abhi.java8features.lambda;
 
-//a representation of an anonymous function 
-//A lambda consists of a list of parameters, a body, a return type and a list of exceptions which can be thrown
+// a representation of an anonymous function
+// A lambda consists of a list of parameters, a body, a return type and a list of exceptions which can be thrown
 // it is very much a function, just anonymous.
 public class LambdaEx02 {
 
