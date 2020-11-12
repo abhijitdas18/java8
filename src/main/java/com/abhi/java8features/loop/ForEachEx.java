@@ -1,4 +1,4 @@
-package com.abhi.java8features;
+package com.abhi.java8features.loop;
 
 import java.util.Arrays;
 import java.util.HashMap;

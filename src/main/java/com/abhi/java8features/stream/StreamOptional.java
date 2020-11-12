@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+import com.abhi.java8features.helper.Employee;
 import com.abhi.java8features.helper.Gender;
-import com.abhi.java8features.helper.Person;
 
 //Stream.findAny()
 //Optional<T> findAny()
@@ -16,22 +16,22 @@ import com.abhi.java8features.helper.Person;
 
 public class StreamOptional {
 	// Create Person object
-	private static List<Person> createPerson() {
-		List<Person> persons = Arrays.asList(new Person("Abhijit", 14, Gender.MALE),
-				new Person("Madhu", 32, Gender.FEMALE), new Person("Raj", 21, Gender.MALE),
-				new Person("Simi", 17, Gender.FEMALE), new Person("Sara", 20, Gender.FEMALE),
-				new Person("Sara", 22, Gender.FEMALE), new Person("Bob", 20, Gender.MALE),
-				new Person("Paula", 32, Gender.FEMALE), new Person("Paul", 32, Gender.MALE),
-				new Person("Jack", 2, Gender.MALE), new Person("Jack", 72, Gender.MALE),
-				new Person("Jill", 12, Gender.FEMALE));
+	private static List<Employee> createPerson() {
+		List<Employee> employees = Arrays.asList(new Employee("Abhijit", 14, Gender.MALE),
+				new Employee("Madhu", 32, Gender.FEMALE), new Employee("Raj", 21, Gender.MALE),
+				new Employee("Simi", 17, Gender.FEMALE), new Employee("Sara", 20, Gender.FEMALE),
+				new Employee("Sara", 22, Gender.FEMALE), new Employee("Bob", 20, Gender.MALE),
+				new Employee("Paula", 32, Gender.FEMALE), new Employee("Paul", 32, Gender.MALE),
+				new Employee("Jack", 2, Gender.MALE), new Employee("Jack", 72, Gender.MALE),
+				new Employee("Jill", 12, Gender.FEMALE));
 
-		return persons;
+		return employees;
 	}
 
 	public static void main(String[] args)
 	{
-		List<Person> persons = createPerson();
-		Optional<Person> anyPersonAbove20 = persons.stream()
+		List<Employee> employees = createPerson();
+		Optional<Employee> anyPersonAbove20 = employees.stream()
 		.filter(per -> per.getAge() >20)
 		.findAny();
 		
@@ -40,7 +40,7 @@ public class StreamOptional {
 			System.out.println("Person above age 20 is " + anyPersonAbove20.get());
 		}
 		
-		Optional <Person> firstPersonAbove25 = persons.stream()
+		Optional <Employee> firstPersonAbove25 = employees.stream()
 		.filter(per -> per.getAge() >25)
 		.findFirst();
 		

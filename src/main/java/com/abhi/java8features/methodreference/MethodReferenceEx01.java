@@ -1,4 +1,4 @@
-package com.abhi.java8features;
+package com.abhi.java8features.methodreference;
 
 public class MethodReferenceEx01 {
 

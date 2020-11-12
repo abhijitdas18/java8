@@ -1,4 +1,4 @@
-package com.abhi.java8features;
+package com.abhi.java8features.helper;
 /**
  *  A domain object to store the CSV contains
  * @author AbDas

@@ -1,4 +1,4 @@
-package com.abhi.java8features;
+package com.abhi.java8features.exception;
 
 import java.io.IOException;
 import java.nio.file.Files;

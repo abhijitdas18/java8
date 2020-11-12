@@ -2,27 +2,29 @@ package com.abhi.java8features.helper;
 
 public class Person {
 	
-	private String name;
-	private int age;
-	private Gender gender;
+	String firstName;
+	String lastName;
+	int age;
 	
-	public Person() {
-		super();
-	}
 	
-	public Person(String name, int age, Gender gender) {
+	public Person(String firstName, String lastName, int age) {
 		super();
-		this.name = name;
+		this.firstName = firstName;
+		this.lastName = lastName;
 		this.age = age;
-		this.gender = gender;
 	}
 	
-	
-	public String getName() {
-		return name;
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 	public int getAge() {
 		return age;
@@ -30,19 +32,10 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public Gender getGender() {
-		return gender;
-	}
-	public void setGender(Gender gender) {
-		this.gender = gender;
-	}
-	
+
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", gender=" + gender + "]";
-	}
+		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
+	}	
 	
-	
-	
-
 }

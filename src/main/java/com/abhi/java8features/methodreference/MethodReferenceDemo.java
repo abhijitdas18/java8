@@ -1,4 +1,4 @@
-package com.abhi.java8features;
+package com.abhi.java8features.methodreference;
 
 import java.util.Arrays;
 import java.util.List;

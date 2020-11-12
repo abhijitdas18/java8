@@ -1,6 +1,6 @@
-package com.abhi.java8features;
+package com.abhi.java8features.newinterfaces;
 
-public class DefaultDemo implements DefualtInterface{
+public class DefaultDemo implements DefaultInterface {
 
 	public static void main(String[] args) {
 
@@ -25,7 +25,7 @@ public class DefaultDemo implements DefualtInterface{
 }
 
 @FunctionalInterface
-interface DefualtInterface{
+interface DefaultInterface {
 	void func1();
 	default void func2()
 	{

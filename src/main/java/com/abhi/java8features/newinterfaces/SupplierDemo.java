@@ -1,6 +1,6 @@
 package com.abhi.java8features.newinterfaces;
 
-import com.abhi.java8features.helper.Person;
+import com.abhi.java8features.helper.Employee;
 import com.abhi.java8features.helper.Gender;
 
 import java.util.ArrayList;
@@ -17,12 +17,12 @@ import java.util.function.Supplier;
 public class SupplierDemo {
 
 	public static void main(String[] args) {
-		Supplier<Person> supplier = () -> {
-			return new Person("Abhijit", 42, Gender.MALE);
+		Supplier<Employee> supplier = () -> {
+			return new Employee("Abhijit", 42, Gender.MALE);
 		};
 
-		Person person = supplier.get();
-		System.out.println("Person Details : " + person);
+		Employee employee = supplier.get();
+		System.out.println("Person Details : " + employee);
 
 		/////////////////////// EX 02 //////////////////
 		List<String> names = new ArrayList<>();
