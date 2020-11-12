@@ -1,4 +1,4 @@
-package com.abhi.java8features.stream;
+package com.abhi.java8features.stream.map;
 // Convert a object into another object using map
 // map(Function func)   -- a function that accepts one argument and produces a result.
 // apply() is a method

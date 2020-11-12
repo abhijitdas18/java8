@@ -1,4 +1,4 @@
-package com.abhi.java8features.stream;
+package com.abhi.java8features.stream.map;
 
 import java.util.Arrays;
 import java.util.List;

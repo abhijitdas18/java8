@@ -1,4 +1,4 @@
-package com.abhi.java8features.stream;
+package com.abhi.java8features.stream.map;
 // mapToInt :
 import java.util.ArrayList;
 import java.util.List;
