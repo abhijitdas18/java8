@@ -49,6 +49,9 @@ public class StreamLazinessTest {
         Thread.sleep(2000);
         System.out.println("Sleep for 2 sec");
         // Terminal operation on the stream and it will invoke the Intermediate operations filter and map
-        empNameStream.collect(Collectors.toList());
+        //empNameStream.collect(Collectors.toList());
+
+        // Terminal operation with short-circuit operation - limit
+        empNameStream.limit(5).collect(Collectors.toList());
     }
 }
